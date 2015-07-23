@@ -51,7 +51,7 @@ def getBillingStat(dicTable, bdSetting, wsSetting):
             errorList = [];
             #Имя сущности, количество необработанных, количество успешнообработанных
             # , количество неуспешнообработанных, количество дублей, общее количество
-            statTable = [["Bill",0,0,0,0,0],["Debt",0,0,0,0,0],["Overpay",0,0,0,0,0],["Prepare debt",0,0,0,0,0],["NopGain",0,0,0,0,0]];
+            statTable = [["Bill",0,0,0,0,0],["Debt",0,0,0,0,0],["Overpay",0,0,0,0,0],["Prepay debt",0,0,0,0,0],["NopGain",0,0,0,0,0]];
             for dataRow in data:
                 if(dataRow[2] is not None):
                     errorList.append([dataRow[0],dataRow[2],dataRow[3]]);

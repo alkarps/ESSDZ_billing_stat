@@ -109,4 +109,5 @@ def getBillingStat(dicTable, bdSetting, wsSetting):
         logging.info("Finish for " + name);
     except Exception, exc:
         logging.error(exc);
+		result = "<h2>"+name+" finished with errors</h2>"
         if tuple(result) not in dicTable: dicTable[name] = name + " finished with error";

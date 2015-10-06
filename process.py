@@ -73,7 +73,7 @@ def getBillingStat(dicTable, bdSetting, wsSetting):
                     </tr>""".format(str(statTableRow[0]), str(statTableRow[1]), str(statTableRow[2]), str(statTableRow[3]), str(statTableRow[4]), str(statTableRow[5]))
             result += "</table>"
             logging.info("Finish formating email body for " + name)
-        if tuple(result) not in dicTable: dicTable[name] = result
+            if tuple(result) not in dicTable: dicTable[name] = result
         logging.info("Finish for " + name)
     except Exception, exc:
         logging.error(exc)
